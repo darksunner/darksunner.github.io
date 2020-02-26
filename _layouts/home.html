@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+{% include block.html %}
+
+<body class="light">
+  <div id="divbody">
+    {% include postscroll.html %}
+  </div>
+
+  <!-- {% include footer.html %} -->
+
+<script>
+  $("div").not(".block").not(".enterdiv").css({
+    filter: "blur(10px)",
+  });
+</script>
+
+</body>
+
+</html>

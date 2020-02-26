@@ -1,0 +1,15 @@
+
+.horizontal {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  // justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .horizontal {
+    width: 100%;
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,35 @@
+#divfooter {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  background: $black;
+}
+
+.socialspace {
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  margin: auto;
+  width: 20%;
+}
+
+.socialspace a {
+  flex: 1;
+}
+
+.socialspace img {
+  max-width: 50px;
+  // filter: invert(1);
+  filter: invert(0.5);
+}
+
+.socialspace img:hover {
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+  .socialspace {
+    width: 50%;
+  }
+}
